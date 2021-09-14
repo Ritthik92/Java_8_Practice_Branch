@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 interface A{
 	
-	void Print(int a);
+	void add(int a, int b);
 	
 	default public void method1(int a) {
 		
@@ -23,8 +23,10 @@ public class LamdaExample {
 	      
 	     list.forEach(s -> System.out.println(s));
 	     
-	     A a = (f) -> System.out.println(f);
-	     a.Print(6);
+	     A a = (b,c) -> System.out.println(b*c);
+	     a.add(6,3);
+	     
+	     
 	   
 		
 	
